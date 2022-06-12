@@ -12,13 +12,13 @@ free in sf(with we can protect specific type of custom text field by 128-bit AES
 - shield platform give advantage to prove compliance
 
 - Keys and secrets work together to provide layers of security. 
-	key - sting(use to scremble/unscremble data)
-	Secrets : pieces of keys(use to secure keys)
-		Tenant secrets and master secrets are keys for keys 
-		If hackers get your key, they also must navigate the secret decryption process controlled by the master and tenant secrets before they can use your key.
-			sf generate 3 master secret per yr with each new release
-			Your tenant secret partners with the master secret in what’s called a key derivation process to create keys that encrypt and decrypt your data.
-			person can update it's tanent secret as many time he wants
+	- key - sting(use to scremble/unscremble data)
+	- Secrets : pieces of keys(use to secure keys)
+		- Tenant secrets and master secrets are keys for keys 
+		- If hackers get your key, they also must navigate the secret decryption process controlled by the master and tenant secrets before they can use your key.
+			- sf generate 3 master secret per yr with each new release
+			- Your tenant secret partners with the master secret in what’s called a key derivation process to create keys that encrypt and decrypt your data.
+			- person can update it's tanent secret as many time he wants
 
 Note: Unlike passwords, you can’t reset a tenant secret. Salesforce can’t help with deleted, destroyed, or misplaced tenant secrets. Always back up tenant secrets.
 
