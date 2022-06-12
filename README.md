@@ -22,9 +22,9 @@ free in sf(with we can protect specific type of custom text field by 128-bit AES
 
 Note: Unlike passwords, you can’t reset a tenant secret. Salesforce can’t help with deleted, destroyed, or misplaced tenant secrets. Always back up tenant secrets.
 
--   SETUP:
-	> permission set: enable the Customize Application and Manage Encryption Keys permissions
-	> setup -> platform encryption --> key Management -> Generate Tanent secret
-	> setup -> paltform encryption --> Encryption policy --> select one of type
+### SETUP:
+- permission set: enable the Customize Application and Manage Encryption Keys permissions
+- setup -> platform encryption --> key Management -> Generate Tanent secret
+- setup -> paltform encryption --> Encryption policy --> select one of type
 Note:  Field values are encrypted only in records created or updated after encryption is enabled.
 
