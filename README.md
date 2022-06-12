@@ -1,11 +1,12 @@
-# Shield Platform Encryption
-- free in developer org but need to purchase licence for other org
-
-# classic encryption: 
+## classic encryption: 
 ```
 free in sf(with we can protect specific type of custom text field by 128-bit AES) and Only users with the View Encrypted Data permission can see data in encrypted custom text fields.
  https://developer.salesforce.com/docs/atlas.en-us.232.0.securityImplGuide.meta/securityImplGuide/fields_about_encrypted_fields.htm
 ```
+
+# Shield Platform Encryption
+- free in developer org but need to purchase licence for other org
+
 
 - shield platform encryption data at rest(mean any data that’s inactive or stored in files, spreadsheets, standard and custom fields, and even databases and data warehouse) with 256 bit AES key
 - shield platform give advantage to prove compliance
@@ -24,5 +25,5 @@ free in sf(with we can protect specific type of custom text field by 128-bit AES
 	> permission set: enable the Customize Application and Manage Encryption Keys permissions
 	> setup -> platform encryption --> key Management -> Generate Tanent secret
 	> setup -> paltform encryption --> Encryption policy --> select one of type
-	Note:  Field values are encrypted only in records created or updated after encryption is enabled.
+Note:  Field values are encrypted only in records created or updated after encryption is enabled.
 
